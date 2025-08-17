@@ -1,0 +1,315 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: gainsboro;
+}
+.container{
+  
+}
+section{
+    padding: 50px;
+}
+
+.index{
+    background-image: url(home.jpg);
+    background-size: cover;
+    min-height: 90vh;
+    background-position: center;
+    position: relative;
+}
+
+.bg{
+    font-size: 170%;
+    text-align: left;
+    line-height: 150%;
+    color: black;
+    padding-top: 0%;
+    margin-left: 3%;
+    font-weight: bolder;
+}
+
+.contacted{
+    font-size: 150%;
+    text-align: left;
+    line-height: 150%;
+    color: white;
+    font-weight: bolder;
+}
+.con{
+        font-size: 200%;
+        text-align: left;
+        line-height: 150%;
+        color: white;
+        padding-top: 32%;
+        margin-left: 10%;
+        font-weight: bolder;
+    }
+
+
+.about{
+    background-image: url(2.jpg);
+    background-size: cover;
+    min-height: 90vh;
+    background-position: center;
+    position: relative;
+}
+
+.contact{
+    background-image: url(11.png);
+    background-size: cover;
+    min-height: 90vh;
+    background-position: center;
+    position: relative;
+}
+
+.prog{
+    background-image: url(3.jpg);
+    background-size: cover;
+    min-height: 80vh;
+    background-position: center;
+    position: relative;
+}
+
+/* header{
+    background-color: rgb(8, 54, 8);
+    color: white;
+    padding: 15px;
+    font-style: oblique;
+    font-family:cursive;
+    font-weight: bolder;
+    font-size: 20px;
+} 
+ */
+/*   nav a {
+    text-decoration: none;
+    color: white;
+    margin: 8px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: red;              
+    transform: scale(1.05);
+  }
+  
+
+nav{
+    background-color: rgb(8, 54, 8);
+    width: 110%;
+}
+
+.navlinks li{
+    display: inline-flex;
+    margin-right: 15%;
+    padding: 0.1%;
+}
+
+nav img{
+    width: 50px;
+    height: 50px;
+    margin-top: 2px;
+    margin-left: -95%;
+}
+ */
+
+ nav {
+      background-color: rgb(8, 54, 8);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem 1rem;
+      position: relative;
+      z-index: 1;
+    }
+    nav img {
+      width: 50px;
+      height: 50px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+    .nav-links a:hover {
+      color: red;
+      transform: scale(1.05);
+    }
+    .nav-toggle {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+.class a{
+    color: black;
+    text-align: justify;
+    font-size: larger;
+    line-height: 150%;
+}
+
+.forms{
+    padding-top: 8%;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label, input, button, ::placeholder, legend{
+/* font-size: large; */
+border: 20%;
+border-radius: 10px;
+cursor: pointer;
+margin-top: 2%;
+}
+input:not([type ="checkbox"]){
+  width: 300px;
+  padding: 5px;
+}
+
+button{
+    background-color: rgb(8, 54, 8);
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+h1, h2{
+    color: rgb(8, 54, 8);
+    text-align: center;
+    padding-top: 5%;
+}
+
+.text-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .grid-item {
+    background-color: #f0f0f0;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    /* text-align: center; */
+  }
+  
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px; 
+  }
+  
+  .image-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .image-gallery img:hover {
+    transform: scale(1.05); 
+  }
+  
+  
+  footer {
+    background-color: rgb(8, 54, 8);
+    color: white; 
+    padding: 3%;
+    margin-top: 5%;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+      text-align: left;
+      padding: 10px;
+    }
+  
+    header {
+      font-size: 16px;
+      padding: 10px;
+      text-align: center;
+    }
+  .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: rgb(8, 54, 8);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+      }
+      .nav-links.show {
+        display: flex;
+        padding-left: 16px;
+        box-sizing: border-box;
+      }
+      .nav-toggle {
+        display: block;
+      }
+    /* .navlinks li {
+      display: block;
+      margin: 10px 0;
+      text-align: center;
+    } */
+  
+    nav img {
+      margin-left: 0;
+      display: block;
+      margin: 0 auto;
+    }
+  
+    .bg, .note {
+      font-size: 120%;
+      padding-top: 10%;
+      margin-left: 5%;
+    }
+  
+    .text-grid {
+      grid-template-columns: 1fr; /* Stack items vertically */    
+    }
+  
+    .image-gallery {
+      grid-template-columns: 1fr; /* One image per row */
+    }
+  
+    input, textarea, button {
+      font-size: 14px;
+      /* width: 100%; */
+    } 
+  
+    form {
+      padding: 5% 0;
+    }
+  
+    section {
+      padding: 20px;
+    }
+  
+    h1, h2 {
+      padding-top: 10px;
+      font-size: 24px;
+    }
+    label{
+    width: 300px;
+    }
+  }
+  
