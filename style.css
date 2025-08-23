@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    box-sizing: border-box;
     background-color: gainsboro;
 }
 .container{
@@ -163,7 +164,13 @@ form{
   flex-direction: column;
   align-items: center;
 }
-
+.form-section{
+  display: flex; 
+  flex-direction: column; 
+  width: 400px; 
+  align-items: flex-start; 
+  align-content: flex-start;
+}
 label, input, button, ::placeholder, legend{
 /* font-size: large; */
 border: 20%;
@@ -196,7 +203,8 @@ h1, h2{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    padding: 20px;
+    padding: 10px;
+    background-color: aqua;
   }
   
   .grid-item {
@@ -312,4 +320,52 @@ h1, h2{
     width: 300px;
     }
   }
+
+  @media screen and (max-width: 480px) {
   
+    input, textarea, button {
+      /* Make inputs and buttons take up most of the screen width */
+      font-size: 16px;
+    }
+  
+    form {
+      padding: 5% 0;
+      background-color: bisque;
+      font-size: 16px; /* Smaller font size for form elements */
+    }
+    .grid-item {
+      padding: 10px;
+      font-size: 16px; /* Smaller font size for grid items */
+      width: 300px;
+
+    }
+    h1, h2 {
+      font-size: 20px;
+    }
+    .text-grid {
+      grid-template-columns: 1fr; /* Stack items vertically on very small screens */
+      padding: 0px;
+    }
+
+    .image-gallery {
+      grid-template-columns: 1fr; /* Stack items vertically on very small screens */
+      padding: 0px;
+    }
+
+    .form-section{
+      padding: 5px;
+      background-color: greenyellow;
+      width: 300px;
+      margin-bottom: 10px;
+      align-items: center;
+    }
+    
+    input:not([type ="checkbox"]){
+  width: 200px;
+  padding: 5px;
+}
+#userMessage{
+  width: 300px;
+}
+    
+  }
