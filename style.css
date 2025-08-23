@@ -327,7 +327,10 @@ h1, h2{
       /* Make inputs and buttons take up most of the screen width */
       font-size: 16px;
     }
-  
+    section{
+      background-color: yellow;
+      padding: 0px;
+    }
     form {
       padding: 5% 0;
       background-color: bisque;
@@ -336,7 +339,7 @@ h1, h2{
     .grid-item {
       padding: 10px;
       font-size: 16px; /* Smaller font size for grid items */
-      width: 300px;
+      width: 100%;
 
     }
     h1, h2 {
@@ -354,7 +357,6 @@ h1, h2{
 
     .form-section{
       padding: 5px;
-      background-color: greenyellow;
       width: 300px;
       margin-bottom: 10px;
       align-items: center;
