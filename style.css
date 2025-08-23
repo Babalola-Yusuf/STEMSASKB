@@ -7,7 +7,7 @@ body {
     background-color: gainsboro;
 }
 .container{
-  
+
 }
 section{
     padding: 50px;
@@ -204,7 +204,6 @@ h1, h2{
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 10px;
-    background-color: aqua;
   }
   
   .grid-item {
@@ -309,7 +308,7 @@ h1, h2{
     }
   
     section {
-      padding: 20px;
+      padding: 0px;
     }
   
     h1, h2 {
@@ -327,19 +326,15 @@ h1, h2{
       /* Make inputs and buttons take up most of the screen width */
       font-size: 16px;
     }
-    section{
-      background-color: yellow;
-      padding: 0px;
-    }
     form {
       padding: 5% 0;
-      background-color: bisque;
       font-size: 16px; /* Smaller font size for form elements */
     }
     .grid-item {
       padding: 10px;
       font-size: 16px; /* Smaller font size for grid items */
       width: 100%;
+      box-sizing: border-box;
 
     }
     h1, h2 {
