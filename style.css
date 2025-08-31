@@ -15,8 +15,9 @@ section{
 
 .index{
     background-image: url(home.jpg);
-    background-size: cover;
-    min-height: 90vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 80vh;
     background-position: center;
     position: relative;
 }
@@ -52,7 +53,7 @@ section{
 
 .about{
     background-image: url(2.jpg);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 80vh;
@@ -322,6 +323,10 @@ h1, h2{
     }
     .about{
       min-height: 50vh;
+    }
+    .index{
+      background-size: contain;
+      min-height: 70vh;
     }
   }
 
