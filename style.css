@@ -123,7 +123,8 @@ nav img{
       background-color: rgb(8, 54, 8);
       color: white;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
+      gap: 30%;
       align-items: center;
       padding: 0.75rem 1rem;
       position: relative;
@@ -135,7 +136,7 @@ nav img{
     }
     .nav-links {
       display: flex;
-      gap: 2rem;
+      gap: 5rem;
     }
     .nav-links a {
       text-decoration: none;
@@ -273,7 +274,7 @@ h1, h2{
         box-sizing: border-box;
       }
       .nav-toggle {
-        display: block;
+        display: block;   
       }
     /* .navlinks li {
       display: block;
