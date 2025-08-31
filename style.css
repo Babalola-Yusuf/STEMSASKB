@@ -52,16 +52,17 @@ section{
 
 .about{
     background-image: url(2.jpg);
-    background-size: cover;
-    min-height: 90vh;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80vh;
     position: relative;
 }
 
 .contact{
     background-image: url(11.png);
     background-size: cover;
-    min-height: 90vh;
+    background-repeat: no-repeat;
     background-position: center;
     position: relative;
 }
@@ -319,6 +320,9 @@ h1, h2{
     label{
     width: 300px;
     }
+    .about{
+      min-height: 50vh;
+    }
   }
 
   @media screen and (max-width: 480px) {
@@ -336,7 +340,6 @@ h1, h2{
       font-size: 16px; /* Smaller font size for grid items */
       width: 100%;
       box-sizing: border-box;
-
     }
     h1, h2 {
       font-size: 20px;
@@ -361,6 +364,25 @@ h1, h2{
     input:not([type ="checkbox"]){
   width: 200px;
   padding: 5px;
+}
+
+.contact{
+ /*    background-size: contain;  */
+ height: 40vh;
+}
+.about{
+  min-height: 40vh;
+  
+}
+.contacted{
+  font-size: 120%;
+  padding: 5px;
+  margin-left: 5px;
+}
+.con{
+  font-size: 150%;
+  padding: 5px;
+  margin-left: 5px;
 }
 #userMessage{
   width: 300px;
