@@ -149,7 +149,7 @@ nav img{
       transform: scale(1.05);
     }
     .nav-toggle {
-      display: none;
+      display: none ;
       font-size: 1.5rem;
       cursor: pointer;
     }
@@ -257,6 +257,9 @@ h1, h2{
       font-size: 16px;
       padding: 10px;
       text-align: center;
+    }
+    nav{
+      justify-content: space-between;
     }
   .nav-links {
         display: none;
@@ -377,7 +380,7 @@ h1, h2{
  height: 40vh;
 }
 .about{
-  min-height: 40vh;
+  min-height: 35vh;
   
 }
 .contacted{
@@ -395,3 +398,8 @@ h1, h2{
 }
     
   }
+@media screen and (max-width: 330px){
+  .about{
+    min-height: 25vh;
+  }
+}
